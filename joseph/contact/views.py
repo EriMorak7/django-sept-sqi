@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def contact(request):
-    return HttpResponse("<h1>Contact us at edu.sqi.ng</h1>")
+    return render(request, "contact/contact.html")
 
 def email(request):
-    return HttpResponse("send us an email at edu.sqi@gmail.com")
+    return render(request, "contact/email.html")
